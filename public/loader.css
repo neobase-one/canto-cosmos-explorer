@@ -1,12 +1,17 @@
 #loading-bg {
   background: var(--initial-loader-bg, #fff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
 }
 
-.loading-logo {
+/* .loading-logo {
   position: absolute;
   inset-block-start: 40%;
   inset-inline-start: calc(50% - 75px);
-}
+} */
 
 .pre-loading {
   position: absolute;

@@ -1,0 +1,39 @@
+{
+    "chain_name": "canto",
+    "registry_name": "canto",
+    "api": [
+        {
+            "provider": "polkachu",
+            "address": "https://canto-api.polkachu.com"
+        },
+        {
+            "provider": "nodestake",
+            "address": "https://api.canto.nodestake.top"
+        }
+    ],
+    "rpc": [
+        {
+            "provider": "polkachu",
+            "address": "https://canto-rpc.polkachu.com:443"
+        },
+        {
+            "provider": "nodestake",
+            "address": "https://rpc.canto.nodestake.top"
+        }
+    ],
+    "snapshot_provider": "",
+    "sdk_version": "0.50.0",
+    "coin_type": "60",
+    "min_tx_fee": "800",
+    "addr_prefix": "canto",
+    "logo": "/logos/canto.png",
+    "assets": [
+        {
+            "base": "acanto",
+            "symbol": "CANTO",
+            "exponent": "18",
+            "coingecko_id": "canto",
+            "logo": "/logos/canto.svg"
+        }
+    ]
+}

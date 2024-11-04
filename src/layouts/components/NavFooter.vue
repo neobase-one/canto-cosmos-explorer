@@ -23,7 +23,7 @@
       > -->
       <a
         class="link link-primary no-underline"
-        href="https://github.com/Canto-Network"
+        href="https://github.com/neobase-one/canto-cosmos-explorer"
         target="noopener noreferrer"
         >Github</a
       >

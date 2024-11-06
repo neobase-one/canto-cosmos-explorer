@@ -1,18 +1,11 @@
 <template>
   <!-- footer -->
-  <footer
-    class="flex items-center h-12 mt-5 text-sm bg-gray-100 dark:bg-[#171d30] py-2 z-10 w-full"
-  >
+  <footer class="flex items-center h-12 mt-5 text-sm bg-gray-100 dark:bg-[#171d30] py-2 z-10 w-full">
     <div class="flex flex-1">
       &copy;&nbsp;
-      {{ new Date().getFullYear() }}&nbsp;Powered By&nbsp;
-      <a
-        class="link link-primary no-underline"
-        href="https://twitter.com/NeoBase_Studios"
-        target="_blank"
-        rel="noopener noreferrer"
-        >NeoBase</a
-      >
+      {{ new Date().getFullYear() }}&nbsp;Forked from&nbsp;
+      <a class="link link-primary no-underline" href="https://ping.pub/" target="_blank"
+        rel="noopener noreferrer">ping.pub</a>
     </div>
     <div class="hidden md:!block">
       <!-- <a
@@ -21,12 +14,8 @@
         target="noopener noreferrer"
         >License</a
       > -->
-      <a
-        class="link link-primary no-underline"
-        href="https://github.com/neobase-one/canto-cosmos-explorer"
-        target="noopener noreferrer"
-        >Github</a
-      >
+      <a class="link link-primary no-underline" href="https://github.com/neobase-one/canto-cosmos-explorer"
+        target="noopener noreferrer">Github</a>
     </div>
   </footer>
 </template>

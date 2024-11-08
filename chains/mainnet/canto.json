@@ -11,10 +11,6 @@
         {
             "provider": "polkachu",
             "address": "https://canto-rpc.polkachu.com:443"
-        },
-        {
-            "provider": "nodestake",
-            "address": "https://rpc.canto.nodestake.top"
         }
     ],
     "snapshot_provider": "",

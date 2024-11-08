@@ -5,10 +5,6 @@
         {
             "provider": "polkachu",
             "address": "https://canto-api.polkachu.com"
-        },
-        {
-            "provider": "nodestake",
-            "address": "https://api.canto.nodestake.top"
         }
     ],
     "rpc": [

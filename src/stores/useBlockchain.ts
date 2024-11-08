@@ -42,13 +42,22 @@ export const useBlockchain = defineStore('blockchain', {
   },
   getters: {
     current(): ChainConfig | undefined {
-      const chain = this.dashboard.chains[this.chainName]
+      const chain = this.dashboard.chains[this.chainName];
       // update chain config with dynamic updated sdk version
-      const sdkversion = localStorage.getItem(`sdk_version_${this.chainName}`)
-      if(sdkversion && chain?.versions) {
+      const sdkversion = localStorage.getItem(`sdk_version_${this.chainName}`);
+      if (sdkversion && chain?.versions) {
         chain.versions.cosmosSdk = sdkversion;
       }
-      return chain;
+      // Remove nodestake since the API doesn't work
+      return {
+        ...chain,
+        endpoints: {
+          ...chain?.endpoints,
+          rest: chain?.endpoints?.rest?.filter(
+            (rest) => !rest.address.includes('nodestake')
+          ),
+        },
+      };
     },
     logo(): string {
       return this.current?.logo || '';
